@@ -4,7 +4,10 @@
 	<meta charset="utf-8">
 	<title>JavaScript exercises - DOM manipulation</title>
 	<link rel="stylesheet" href="style.css">
-	<!-- <script src="jquery" charset="utf-8"></script> -->
+	<script
+  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+  crossorigin="anonymous"></script>
 	<script src="script.js" charset="utf-8"></script>
 </head>
 <body>
@@ -15,6 +18,7 @@
 			1 Skapa en sida med en div. Ge div-elementet ett id. När sidan laddas ska du byta textinnehållet till något annat med hjälp av JavaScript och egenskapen innerHTML.
 		</div>
 	</section>
+
 	<section>
 		<h2>Exercise 2</h2>
 		<div class="">
@@ -24,6 +28,22 @@
 			<ol id="ex2list">
 				<li>I'm so lonely</li>
 			</ol>
+		</div>
+	</section>
+
+	<section>
+		<h2>Exercise 3</h2>
+		<div class="">
+			3 Skapa ett button-element med ett id och flera div-element som har samma CSS-klass. Skriv CSS för klassen. Gör så att alla div-element byter värde på innerHTML när man klickar på knappen. Använd document.getElementsByClassName.
+			Utöka exemplet så att när man klickar på knappen nästa gång ska den byta tillbaka värdet.
+			<br>
+			<button id="ex3button">Switch text!</button>
+			<button id="ex3jbutton">Switch text! (jQuery)</button>
+			<div class="switchContent"> hello </div>
+			<div class="switchContent"> hello </div>
+			<div class="switchContent"> hello </div>
+			<div class="switchContent"> hello </div>
+			<div class="switchContent"> hello </div>
 		</div>
 	</section>
 </body>

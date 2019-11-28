@@ -16,6 +16,32 @@ window.addEventListener('load', () => {
 		li.innerText = userText;
 		ex2list.appendChild(li);
 	});
+
+
+	let buttonState = true;
+	{  // this block creates a new scope for the variables
+		let ex3button = document.querySelector('#ex3button');
+		let switcherDivs = document.getElementsByClassName('switchContent');
+		ex3button.addEventListener('click', e => {
+			// If we want to use forEach, we need to convert switcherDivs using Array.from()
+			for( let i=0; i<switcherDivs.length; i++ ){
+				let div = switcherDivs[i];
+				if( buttonState ) {div.innerHTML = 'goodbye';}
+				else { div.innerHTML = 'hello'; }
+			}
+			buttonState = !buttonState;
+		})
+	}
+	{  // this block creates a new scope for the variables
+		let ex3button = $('#ex3jbutton');
+		let switcherDivs = $('.switchContent');
+		ex3button.on('click', e => {
+			if( buttonState ) {switcherDivs.html('goodbye');}
+			else { switcherDivs.html('hello'); }
+			buttonState = !buttonState;
+		})
+	}
+
 })
 
 
